@@ -1,2 +1,2 @@
 # javascript-practice
-This repository id for tracking my javascript practice
+This repository is for tracking my javascript practice
