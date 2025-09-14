@@ -5,7 +5,7 @@
 <script>
 function sadikFunction(){
   const msg = document.getElementById("p02");
-  message.innerHTML = "";
+  msg.innerHTML = "";
   let a = document.getElementById("demo2").value;
   try{
     if(a.trim() == "") throw "empty";
@@ -15,7 +15,7 @@ function sadikFunction(){
     if(a > 10)  throw "too high";
   }
   catch(err1){
-    message.innerHTML = "Input is :" + err1;
+    msg.innerHTML = "Input is :" + err1;
   }
 }
 </script>
