@@ -1,0 +1,23 @@
+<input id="demo2" type="text">
+<button type="button" onclick="sadikFunction()">Input</button>
+<p id="p02"></p>
+
+<script>
+function sadikFunction(){
+  const msg = document.getElementById("p02");
+  message.innerHTML = "";
+  let a = document.getElementById("demo2").value;
+  try{
+    if(a.trim() == "") throw "empty";
+    if(isNaN(a)) throw "not a number";
+    a = Number(a);
+    if(a < 5) throw "too low";
+    if(a > 10)  throw "too high";
+  }
+  catch(err1){
+    message.innerHTML = "Input is " + err1;
+  }
+}
+</script>
+</body>
+</html>
