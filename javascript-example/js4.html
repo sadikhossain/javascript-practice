@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!---->
     <p id="hidden">hide text by javascript</p>
@@ -12,5 +14,21 @@
     <!--hide html element by js-->
     <!--show hidden element by js-->
     <button type="button" onclick="document.getElementById('hidden').style.display='block'">show</button>
+
+    <!--function with argument-->
+    <p>Click "Try it" to call a function with arguments</p>
+
+    <button onclick="myFunction('Harry Potter','Wizard')">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction(name, job) {
+            document.getElementById("demo").innerHTML = "Welcome " + name + ", the " + job + ".";
+        }
+    </script>
+
+
 </body>
+
 </html>
